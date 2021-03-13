@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Territory</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">    <style>
+        body {
+            margin: auto;
+        }
+        IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    h1 {
+        text-align: center;
+        font-size: 22pt;
+        padding: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #f8f9fa;
+    }
+    p {color: #ced4da;
+    padding: 0px 30px ;
+    font-family: 'Work Sans', sans-serif;}
+    button {
+    border: none;
+    background-color: white;
+  }
+    #sobre {
+        display: inline-flex;
+    }
+    section {
+        margin: auto;
+        padding: 30px 50px;
+    }
+    div {
+        background-color: rgb(37, 37, 39);
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(37, 37, 39); font-size: 30pt; padding-bottom: 40px;" >Cores para seu Territory Titanium</h1>
+    <img  id="carroh" src="img/Cores/carro-branco.jpg" alt="imagem principal" class="displayed">
+    <br>
+    <div style="text-align: center; background-color: white;">
+        <button id="car1" value="branco">
+        <img  src="img/Cores/icone branco.png" alt="cor branco">
+        </button>
+
+        <button id="car2" value="vermelho">
+        <img src="img/Cores/icone vermelho.png" alt="cor vermelho">
+        </button>
+
+        <button id="car3" value="preto">
+        <img src="img/Cores/icone preto.jpg" alt="cor preto">
+        </button>
+    </div>
+    <br><br>
+    <section id="sobre">
+        <div class="">
+            <h1 >Tecnologia</h1>
+            <p style="font-size: 18pt;">No Novo Ford Territory, você está cercado de tecnologia, que garante muito mais segurança e conforto na hora de dirigir.
+                Vem com piloto automático adaptativo com Stop and Go, sistema de estacionamento automático, câmera 360° com Bird-Eye View e alerta de colisão com frenagem autônoma de emergência (AEB).4</p> 
+        </div>
+        <div>
+            <img src="img/sobre.png" alt="">
+        </div>
+    </section>
+    <section id="sobre">
+        <div>
+            <img src="img/interior.png" alt="">
+        </div>
+        <div class="">
+            <h1 >Exterior e Interior</h1>
+            <p style="font-size: 18pt;"> Imponente por fora, sofisticado por dentro.
+                Elegante, com um design robusto e faróis e lanternas em LED. Sofisticado e espaçoso, com todo acabamento e conforto que um SUV deve ter. </p> 
+        </div>
+        
+    </section>
+
+
+    <script>
+
+            var car1 = document.getElementById ('car1');
+            var carroh = document.getElementById ('carroh');
+            car1.onclick = function() {
+                if(car1.value === 'branco'){
+                    carroh.src = './img/Cores/carro-branco.jpg'
+  
+                } 
+            }
+            var car2 = document.getElementById ('car2');
+            car2.onclick = function() {
+                if(car1.value === 'branco'){
+                    carroh.src = './img/Cores/carro-vermelho.jpg'
+                    
+                } 
+            }
+            var car3 = document.getElementById ('car3');
+            car3.onclick = function() {
+                if(car3.value === 'preto'){
+                    carroh.src = './img/Cores/carro-preto.jpg'
+  
+                } 
+            }
+    </script>
+</body>
+</html>

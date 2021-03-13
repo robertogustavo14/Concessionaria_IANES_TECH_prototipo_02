@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Territory</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">    <style>
+        body {
+            margin: auto;
+        }
+        IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    h1 {
+        text-align: center;
+        font-size: 22pt;
+        padding: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #f8f9fa;
+    }
+    p {color: #ced4da;
+    padding: 0px 30px ;
+    font-family: 'Work Sans', sans-serif;}
+    button {
+    border: none;
+    background-color: white;
+  }
+    #sobre {
+        display: inline-flex;
+    }
+    section {
+        margin: auto;
+        padding: 30px 50px;
+    }
+    div {
+        background-color: rgb(37, 37, 39);
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(37, 37, 39); font-size: 30pt; padding-bottom: 40px;" >Cores para seu Ranger</h1>
+    <img  id="carroh" src="car2/carro-azul.png" alt="imagem principal" class="displayed">
+    <br>
+    <div style="text-align: center; background-color: white;">
+        <button id="car1" value="azul">
+        <img  src="car2/icone-azul.png" alt="cor azul">
+        </button>
+
+        <button id="car2" value="cinza">
+        <img src="car2/icone-cinza.png" alt="cinza">
+        </button>
+
+        <button id="car3" value="marrom">
+        <img src="car2/icone-marrom.png" alt="cor marrom">
+        </button>
+    </div>
+    <br><br>
+    <section id="sobre">
+        <div class="">
+            <h1 >Performance</h1>
+            <p style="font-size: 18pt;"> O DNA Raça Forte também vive na Ranger Storm. Você sente isso, por exemplo, na potência do motor, na sua capacidade de imersão 800mm, no Diferencial Traseiro Blocante. Tudo isso, somado aos pneus Scorpion All Terrain Plus, faz você superar os terrenos mais desafiadores.</p> 
+        </div>
+        <div>
+            <img src="car2/sobre1.png" alt="">
+        </div>
+    </section>
+    <section id="sobre">
+        <div>
+            <img src="car2/sobre2.png" alt="">
+        </div>
+        <div class="">
+            <h1 >Design</h1>
+            <p style="font-size: 18pt;"> A robustez da Ranger Storm já aparece de cara, com os faróis escurecidos integrados à grade frontal Storm. Tudo isso somado aos alargadores de para-lamas e aos detalhes em preto nas laterais e no capô, mostram como a Ranger Storm é carregada de atitude.</p> 
+        </div>
+        
+    </section>
+
+
+    <script>
+
+            var car1 = document.getElementById ('car1');
+            var carroh = document.getElementById ('carroh');
+            car1.onclick = function() {
+                if(car1.value === 'azul'){
+                    carroh.src = './car2/carro-azul.png'
+  
+                } 
+            }
+            var car2 = document.getElementById ('car2');
+            car2.onclick = function() {
+                if(car2.value === 'cinza'){
+                    carroh.src = './car2/carro-cinza.png'
+                    
+                } 
+            }
+            var car3 = document.getElementById ('car3');
+            car3.onclick = function() {
+                if(car3.value === 'marrom'){
+                    carroh.src = './car2/carro-marrom.png'
+  
+                } 
+            }
+    </script>
+</body>
+</html>

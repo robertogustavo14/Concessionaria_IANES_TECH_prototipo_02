@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Territory</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">    <style>
+        body {
+            margin: auto;
+        }
+        IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    h1 {
+        text-align: center;
+        font-size: 22pt;
+        padding: 30px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #f8f9fa;
+    }
+    p {color: #ced4da;
+    padding: 0px 30px ;
+    font-family: 'Work Sans', sans-serif;}
+    button {
+    border: none;
+    background-color: white;
+  }
+    #sobre {
+        display: inline-flex;
+    }
+    section {
+        margin: auto;
+        padding: 30px 50px;
+    }
+    div {
+        background-color: #252527;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(37, 37, 39); font-size: 30pt; padding-bottom: 40px;" >Cores para seu Ka Hatch</h1>
+    <img  id="carroh" src="car3/carro-preto.png" alt="imagem principal" class="displayed">
+    <br>
+    <div style="text-align: center; background-color: white;">
+        <button id="car1" value="preto">
+        <img  src="car3/icone-preto.png" alt="cor preto">
+        </button>
+
+        <button id="car2" value="prata">
+        <img src="car3/icone-cinza.png" alt="cor prata">
+        </button>
+
+        <button id="car3" value="vermelho">
+        <img src="car3/icone-vermelho.png" alt="cor vermelha">
+        </button>
+    </div>
+    <br><br>
+    <section id="sobre">
+        <div class="">
+            <h1 >Exterior e Interior</h1>
+            <p style="font-size: 18pt;">Você se impressiona toda vez que entra em um Ka. Toda a linha investe em design, fazendo do Ka um carro muito moderno. Além disso, com todo o conforto dos bancos e seu acabamento superior, você nem vai perceber que está no trânsito.</p> 
+        </div>
+        <div>
+            <img src="car3/sobre1.png" alt="">
+        </div>
+    </section>
+    <section id="sobre">
+        <div>
+            <img src="car3/sobre2.png" alt="">
+        </div>
+        <div class="">
+            <h1 >Segurança</h1>
+            <p style="font-size: 18pt;"> Pensando na segurança, o Ka se diferencia. Ele conta com Air bags frontais e laterais. Além de outros recursos como a Câmera de ré, Sensor de estacionamento traseiro e Luz indicativa de direção no retrovisor. Confira outros itens presentes no seu Ka que são essenciais nesta categoria, como: ISOFIX, Controle eletrônico de estabilidade e tração (AdvanceTrac®) e Assistência de Partida em Rampas (HLA). Tudo isso para deixar sua experiência de dirigir um Ka muito mais segura.</p> 
+        </div>
+        
+    </section>
+
+
+    <script>
+
+            var car1 = document.getElementById ('car1');
+            var carroh = document.getElementById ('carroh');
+            car1.onclick = function() {
+                if(car1.value === 'preto'){
+                    carroh.src = './car3/carro-preto.png'
+  
+                } 
+            }
+            var car2 = document.getElementById ('car2');
+            car2.onclick = function() {
+                if(car2.value === 'prata'){
+                    carroh.src = './car3/carro-cinza.png'
+                    
+                } 
+            }
+            var car3 = document.getElementById ('car3');
+            car3.onclick = function() {
+                if(car3.value === 'vermelho'){
+                    carroh.src = './car3/carro-vermelho.png'
+  
+                } 
+            }
+    </script>
+</body>
+</html>
